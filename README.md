@@ -1,19 +1,110 @@
 # DifGa
 
-**DifGa** is a fully differentiable, Gaussian-only error mitigation framework for continuous-variable photonic quantum circuits.
+**DifGa** is a fully differentiable, Gaussian-only error mitigation framework for
+continuous-variable (CV) photonic quantum circuits.
 
-Unlike bosonic quantum error correction schemes based on non-Gaussian
-code states (e.g., GKP), DifGa operates entirely at the level of
-quadrature observables and uses only Gaussian operations, vacuum ancillas,
-and gradient-based optimization.
+Unlike bosonic quantum error correction schemes based on non-Gaussian code
+states (e.g., GKP), DifGa operates entirely at the level of *quadrature
+observables* and uses only Gaussian operations, vacuum ancillas, and
+gradient-based optimization. The framework is designed to be compatible with
+near-term integrated photonic hardware and modern differentiable quantum
+software stacks.
+
+---
+
+## Motivation
+
+Photonic quantum computers based on Gaussian continuous-variable operations
+offer scalability, room-temperature operation, and high-bandwidth optical
+interconnects. However, their performance is fundamentally limited by optical
+loss, phase drift, and other noise sources.
+
+Conventional bosonic quantum error correction circumvents Gaussian no-go
+theorems using highly non-Gaussian resources such as Gottesman–Kitaev–Preskill
+(GKP) states, which require large squeezing, modular measurements, and complex
+state preparation. These requirements are beyond the reach of current
+large-scale photonic platforms.
+
+DifGa addresses a *different problem*:  
+**hardware-compatible error mitigation for expectation values**, rather than
+fault-tolerant logical quantum memory. By remaining entirely within the
+Gaussian regime, DifGa enables efficient simulation, differentiable training,
+and immediate experimental relevance.
+
+---
 
 ## Key Features
-- Multi-mode Gaussian architectures
-- Trainable Gaussian recovery layers
-- Gaussian loss + weak non-Gaussian phase noise
-- End-to-end differentiability via PennyLane
-- Hardware-compatible with near-term photonic platforms
+
+- **Gaussian-only framework**  
+  No non-Gaussian states, measurements, or resources required.
+
+- **Multi-mode Gaussian architectures**  
+  Exploits ancillary modes to redistribute noise and suppress quadrature errors.
+
+- **Trainable Gaussian recovery layers**  
+  Physically realizable displacements and phase-space rotations optimized
+  end-to-end.
+
+- **Gaussian loss + weak non-Gaussian phase noise**  
+  Supports realistic optical loss and differentiable Monte Carlo modeling of
+  phase jitter.
+
+- **End-to-end differentiability**  
+  Implemented using PennyLane’s `default.gaussian` backend with automatic
+  differentiation.
+
+- **Hardware-compatible**  
+  Requires only linear optics, squeezing, vacuum ancillas, and homodyne
+  detection.
+
+---
+
+## What DifGa Is — and Is Not
+
+### DifGa **is**
+- An **observable-level error mitigation** method
+- A **software-native**, differentiable approach
+- Designed for **near-term photonic hardware**
+- Compatible with **Gaussian simulators and experiments**
+
+### DifGa **is not**
+- ❌ Fault-tolerant quantum error correction  
+- ❌ A logical encoding scheme  
+- ❌ A replacement for GKP or bosonic QEC  
+- ❌ A non-Gaussian protocol  
+
+DifGa and GKP-based methods address **complementary regimes** rather than
+competing objectives.
+
+---
+
+## Architecture Overview
+
+At a high level, DifGa consists of:
+
+1. **Ideal Gaussian encoding**  
+   Multi-mode Gaussian resource preparation (signal + ancilla).
+
+2. **Noise model**
+   - Gaussian loss modeled by beam-splitter coupling to an environment mode
+   - Weak non-Gaussian phase noise modeled via differentiable Monte Carlo
+     mixtures
+
+3. **Trainable Gaussian recovery**
+   - Local phase rotations and displacements
+   - Parameters optimized using gradient-based methods
+
+4. **Cost function**
+   - Mean-squared error between ideal and noisy quadrature expectations
+
+The full architecture and its contrast with GKP-based logical recovery are
+illustrated in the accompanying manuscript figures.
+
+---
 
 ## Installation
+
+Clone the repository:
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/DennisWayo/difga-photonics.git
+cd difga-photonics

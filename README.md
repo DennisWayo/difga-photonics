@@ -1,4 +1,13 @@
-# DifGa
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![PennyLane](https://img.shields.io/badge/Powered%20by-PennyLane-8A2BE2)
+![Quantum](https://img.shields.io/badge/Quantum-Continuous--Variable-green)
+![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)
+![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
+![Last Commit](https://img.shields.io/github/last-commit/DennisWayo/difga-photonics)
+[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+
+# DifGa–photonics
 
 **DifGa** is a fully differentiable, Gaussian-only error mitigation framework for
 continuous-variable (CV) photonic quantum circuits.
@@ -10,7 +19,7 @@ gradient-based optimization. The framework is designed to be compatible with
 near-term integrated photonic hardware and modern differentiable quantum
 software stacks.
 
----
+
 
 ## Motivation
 
@@ -31,7 +40,6 @@ fault-tolerant logical quantum memory. By remaining entirely within the
 Gaussian regime, DifGa enables efficient simulation, differentiable training,
 and immediate experimental relevance.
 
----
 
 ## Key Features
 
@@ -68,10 +76,10 @@ and immediate experimental relevance.
 - Compatible with **Gaussian simulators and experiments**
 
 ### DifGa **is not**
-- ❌ Fault-tolerant quantum error correction  
-- ❌ A logical encoding scheme  
-- ❌ A replacement for GKP or bosonic QEC  
-- ❌ A non-Gaussian protocol  
+-  Fault-tolerant quantum error correction  
+-  A logical encoding scheme  
+-  A replacement for GKP or bosonic QEC  
+-  A non-Gaussian protocol  
 
 DifGa and GKP-based methods address **complementary regimes** rather than
 competing objectives.
@@ -108,3 +116,11 @@ Clone the repository:
 ```bash
 git clone https://github.com/DennisWayo/difga-photonics.git
 cd difga-photonics
+```
+
+## Acknowledgments
+
+DifGa makes extensive use of the open-source PennyLane framework developed
+by Xanadu for differentiable quantum programming. We gratefully acknowledge
+the Xanadu team for providing robust continuous-variable simulation tools and
+automatic differentiation support.

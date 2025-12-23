@@ -7,7 +7,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/DennisWayo/difga-photonics)
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
 
-# DifGa–photonics
+## DifGa–photonics
 
 **DifGa** is a fully differentiable, Gaussian-only error mitigation framework for
 continuous-variable (CV) photonic quantum circuits.
@@ -21,7 +21,7 @@ software stacks.
 
 
 
-## Motivation
+### Motivation
 
 Photonic quantum computers based on Gaussian continuous-variable operations
 offer scalability, room-temperature operation, and high-bandwidth optical
@@ -41,7 +41,7 @@ Gaussian regime, DifGa enables efficient simulation, differentiable training,
 and immediate experimental relevance.
 
 
-## Key Features
+### Core Features
 
 - **Gaussian-only framework**  
   No non-Gaussian states, measurements, or resources required.
@@ -67,15 +67,15 @@ and immediate experimental relevance.
 
 ---
 
-## What DifGa Is — and Is Not
+### What DifGa Is — and Is Not
 
-### DifGa **is**
+#### DifGa **is**
 - An **observable-level error mitigation** method
 - A **software-native**, differentiable approach
 - Designed for **near-term photonic hardware**
 - Compatible with **Gaussian simulators and experiments**
 
-### DifGa **is not**
+#### DifGa **is not**
 -  Fault-tolerant quantum error correction  
 -  A logical encoding scheme  
 -  A replacement for GKP or bosonic QEC  
@@ -86,7 +86,7 @@ competing objectives.
 
 ---
 
-## Architecture Overview
+### Architecture Overview
 
 At a high level, DifGa consists of:
 
@@ -108,9 +108,16 @@ At a high level, DifGa consists of:
 The full architecture and its contrast with GKP-based logical recovery are
 illustrated in the accompanying manuscript figures.
 
+
+
+
+<img width="2672" height="1204" alt="image3" src="https://github.com/user-attachments/assets/b54aa3b4-81e3-48d1-b8da-44ae8b2f2dd5" />
+
+
+
 ---
 
-## Installation
+### Installation
 
 Clone the repository:
 ```bash
@@ -118,7 +125,7 @@ git clone https://github.com/DennisWayo/difga-photonics.git
 cd difga-photonics
 ```
 
-## Acknowledgments
+### Acknowledgments
 
 DifGa makes extensive use of the open-source PennyLane framework developed
 by Xanadu for differentiable quantum programming. We gratefully acknowledge

@@ -2,7 +2,6 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![PennyLane](https://img.shields.io/badge/Powered%20by-PennyLane-8A2BE2)
 ![Quantum](https://img.shields.io/badge/Quantum-Continuous--Variable-green)
-![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
 ![Last Commit](https://img.shields.io/github/last-commit/DennisWayo/difga-photonics)
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
@@ -34,8 +33,7 @@ theorems using highly non-Gaussian resources such as Gottesman–Kitaev–Preski
 state preparation. These requirements are beyond the reach of current
 large-scale photonic platforms.
 
-DifGa addresses a *different problem*:  
-**hardware-compatible error mitigation for expectation values**, rather than
+DifGa addresses a *different problem*: **hardware-compatible error mitigation for expectation values**, rather than
 fault-tolerant logical quantum memory. By remaining entirely within the
 Gaussian regime, DifGa enables efficient simulation, differentiable training,
 and immediate experimental relevance.
@@ -108,12 +106,7 @@ At a high level, DifGa consists of:
 The full architecture and its contrast with GKP-based logical recovery are
 illustrated in the accompanying manuscript figures.
 
-
-
-
 <img width="2672" height="1204" alt="image3" src="https://github.com/user-attachments/assets/b54aa3b4-81e3-48d1-b8da-44ae8b2f2dd5" />
-
-
 
 ---
 

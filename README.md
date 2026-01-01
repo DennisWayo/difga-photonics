@@ -4,7 +4,7 @@
 ![Quantum](https://img.shields.io/badge/Quantum-Continuous--Variable-green)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
 ![Last Commit](https://img.shields.io/github/last-commit/DennisWayo/difga-photonics)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://doi.org/10.48550/arXiv.2512.23776)
+[![arXiv](https://img.shields.io/badge/arXiv.2512.23776.svg)](https://doi.org/10.48550/arXiv.2512.23776)
 
 ## DifGa–photonics
 

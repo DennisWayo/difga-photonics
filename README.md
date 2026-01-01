@@ -4,7 +4,8 @@
 ![Quantum](https://img.shields.io/badge/Quantum-Continuous--Variable-green)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen)
 ![Last Commit](https://img.shields.io/github/last-commit/DennisWayo/difga-photonics)
-[![arXiv](https://img.shields.io/badge/arXiv.2512.23776.svg)](https://doi.org/10.48550/arXiv.2512.23776)
+[![arXiv](https://img.shields.io/badge/arXiv-2512.23776-B31B1B.svg)](https://arxiv.org/abs/2512.23776)
+[![DOI](https://img.shields.io/badge/DOI-10.48550/arXiv.2512.23776-blue.svg)](https://doi.org/10.48550/arXiv.2512.23776)
 
 ## DifGa–photonics
 
@@ -116,6 +117,22 @@ Clone the repository:
 ```bash
 git clone https://github.com/DennisWayo/difga-photonics.git
 cd difga-photonics
+```
+
+### Cite
+Please cite this work if you use it:
+```bash
+@article{Wayo2025DifGa,
+  title        = {DifGa: Differentiable Error Mitigation for Multi-Mode Gaussian and Non-Gaussian Noise in Quantum Photonic Circuits},
+  author       = {Wayo, Dennis Delali Kwesi and Dias, Rodrigo Alves and Goliatt, Leonardo and Groppe, Sven},
+  journal      = {arXiv e-prints},
+  year         = {2025},
+  archivePrefix= {arXiv},
+  eprint       = {2512.23776},
+  primaryClass = {quant-ph},
+  doi          = {10.48550/arXiv.2512.23776},
+  url          = {https://arxiv.org/abs/2512.23776}
+}
 ```
 
 ### Acknowledgments
